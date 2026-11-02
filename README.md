@@ -1,56 +1,56 @@
-# CSV Analyzer for Android
+# CSV অ্যানালাইজার (Android)
 
-Two tools in one app:
+একটি অ্যাপে দুটি কাজ:
 
-- **Locate** finds the coordinates in a message and opens Google Maps directions to them. Works offline.
-- **Analyze** signs in to your team's CSV Analyzer server so you can upload CSV or XLSX exports and explore activity, places on a map, contacts and devices.
+- **লোকেশন:** মেসেজের ভেতরের অবস্থান (অক্ষাংশ, দ্রাঘিমাংশ) খুঁজে Google Maps-এ পথ দেখায়। ইন্টারনেট ছাড়াই চলে।
+- **বিশ্লেষণ:** টিমের সার্ভারে লগইন করে CSV বা XLSX ফাইল আপলোড করুন, তারপর সহজ ভাষায় ফলাফল, যোগাযোগ, যোগসূত্র চিত্র ও রেকর্ড তালিকা দেখুন।
 
-## Download
+## ডাউনলোড
 
-Get the latest APK from the [Releases page](../../releases/latest).
+সর্বশেষ APK পাবেন [Releases পেজে](../../releases/latest)।
 
-## Install
+## ইনস্টল
 
-1. On the phone, open the Releases page and tap the latest `csv-analyzer-<version>.apk`.
-2. When Android asks, allow your browser to **install unknown apps**.
-3. Tap **Install**. If Play Protect warns about an unknown developer, choose **Install anyway**.
+1. ফোনে Releases পেজ খুলে সর্বশেষ `csv-analyzer-<version>.apk` ট্যাপ করুন।
+2. Android জানতে চাইলে ব্রাউজারকে **অজানা অ্যাপ ইনস্টল** করার অনুমতি দিন।
+3. **Install** ট্যাপ করুন। Play Protect অজানা ডেভেলপারের সতর্কতা দেখালে **Install anyway** বেছে নিন।
 
-Already have an older version? Install the new APK over it; there is no need to uninstall first.
+আগের ভার্সন থাকলে নতুন APK সরাসরি তার ওপর ইনস্টল করুন; আনইনস্টল করার দরকার নেই।
 
-Requires Android 8.0 or newer.
+Android 8.0 বা তার পরের ভার্সন লাগবে।
 
-## Use
+## ব্যবহার
 
-### Locate
+### লোকেশন
 
-- **Select text:** in any app, select the message with the coordinates, open the menu (⋮) and tap **Navigate to location**.
-- **Share:** share the message to **CSV Analyzer**.
-- **Paste:** copy the message, open CSV Analyzer and tap **Paste from clipboard**.
+- **লেখা সিলেক্ট করে:** যেকোনো অ্যাপে অবস্থানসহ মেসেজটি সিলেক্ট করুন, মেনু (⋮) খুলে **লোকেশনে যান** ট্যাপ করুন।
+- **শেয়ার করে:** মেসেজটি **CSV অ্যানালাইজার**-এ শেয়ার করুন।
+- **পেস্ট করে:** মেসেজটি কপি করে অ্যাপ খুলুন এবং **ক্লিপবোর্ড থেকে পেস্ট করুন** ট্যাপ করুন।
 
-Check the location on the confirmation screen, then tap **Navigate**. Google Maps opens with directions from your current location. If Google Maps is not installed, another maps app or the browser is used.
+**অবস্থান নিশ্চিত করুন** স্ক্রিনে জায়গাটি মিলিয়ে নিয়ে **পথ দেখান** ট্যাপ করুন। আপনার বর্তমান অবস্থান থেকে পথসহ Google Maps খুলবে। Google Maps না থাকলে অন্য ম্যাপ অ্যাপ বা ব্রাউজার খুলবে।
 
-### Analyze
+### বিশ্লেষণ
 
-1. Open the **Analyze** tab and sign in with the server address (it must start with `https://`), username and password your team gave you.
-2. Upload a CSV or XLSX file, or load the demo data. If the columns are not recognised, match them in the form shown.
-3. Optionally add a tower list (tower IDs with coordinates) to place towers on the map.
-4. Open the dashboard: overview, activity charts, map with movement playback, locations, contacts, link graph, flags, devices and a searchable event log. Use the filter button to narrow by date, contact, type or tower.
+1. **বিশ্লেষণ** ট্যাবে টিমের দেওয়া ইউজারনেম ও পাসওয়ার্ড দিয়ে লগইন করুন। সার্ভারের ঠিকানা অ্যাপেই দেওয়া আছে।
+2. CSV বা XLSX ফাইল আপলোড করুন, অথবা **ডেমো ডেটা খুলুন**। কলাম চেনা না গেলে দেখানো ফর্মে মিলিয়ে দিন।
+3. সব সারি পড়া গেলে ফলাফল নিজে থেকেই খুলবে। কিছু সারি বাদ পড়লে কারণগুলো দেখিয়ে **ফলাফল দেখুন** বোতাম আসবে।
+4. ফলাফলের চারটি ট্যাব: **ফলাফল** (নজর দেওয়া দরকার এমন বিষয় ও দৈনন্দিন রুটিন), **যোগাযোগ**, **যোগসূত্র চিত্র** ও **রেকর্ড তালিকা**। তারিখ, নম্বর, ধরন বা টাওয়ার দিয়ে ছোট করতে **ফিল্টার** ব্যবহার করুন।
+5. চাইলে **টাওয়ার তালিকা** (টাওয়ার আইডি ও অবস্থান) যোগ করুন, তাহলে টাওয়ারের নাম দেখা যাবে।
 
-Results are rule-based inferences, not proof.
+ফলাফল নিয়মভিত্তিক অনুমান, চূড়ান্ত প্রমাণ নয়।
 
-## Privacy
+## গোপনীয়তা
 
-- **Locate** works offline and sends nothing anywhere.
-- **Analyze** connects only to the server address you enter, over HTTPS. Uploaded data stays in that server's memory for your session and is deleted when you sign out, delete it, or the session expires.
-- The only thing saved on the phone is the last server address. Passwords, sessions and data are never stored, and map tiles are not cached.
-- The map downloads tiles from the map provider your server is set up with (for example OpenStreetMap), which sees the areas you view.
-- Screenshots of the app are blocked.
-- Opening a maps app from Locate shares the destination with that app's provider.
+- **লোকেশন** ইন্টারনেট ছাড়া চলে এবং কোথাও কিছু পাঠায় না।
+- **বিশ্লেষণ** শুধু অ্যাপে দেওয়া সার্ভারের সাথে HTTPS-এ যোগাযোগ করে। আপলোড করা ডেটা আপনার সেশন চলাকালীন শুধু সার্ভারের মেমরিতে থাকে; লগআউট করলে, **ডেটা মুছুন** চাপলে বা সেশনের মেয়াদ শেষ হলে মুছে যায়।
+- ফোনে শুধু সার্ভারের ঠিকানা সংরক্ষিত থাকে। পাসওয়ার্ড, সেশন বা ডেটা কখনো ফোনে রাখা হয় না।
+- অ্যাপের স্ক্রিনশট নেওয়া বন্ধ।
+- লোকেশন থেকে ম্যাপ অ্যাপ খুললে গন্তব্যটি সেই অ্যাপের প্রদানকারী জানতে পারে।
 
-## Verify the download (optional)
+## ডাউনলোড যাচাই (ঐচ্ছিক)
 
-SHA-256 of `csv-analyzer-0.2.0.apk`:
+`csv-analyzer-0.3.0.apk`-এর SHA-256:
 
 ```
-4f53796f17aa874fdc30f666f1dfd49948f58a180f75dc88568bfc021afe3a6e
+8e7c588897429079a824aa26a8fdc35dceb6e4a749d676981b424b882e981805
 ```
